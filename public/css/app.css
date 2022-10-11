@@ -10850,3 +10850,47 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.sidebar ul li a {
+  color: #000;
+  text-decoration: none;
+}
+.sidebar ul li.active, .sidebar ul li:hover {
+  background-color: #0d6efd;
+}
+.sidebar ul li.active a, .sidebar ul li:hover a {
+  color: #fff;
+}
+
+.prescription-images {
+  display: flex;
+}
+
+.prescription-image {
+  max-width: 19%;
+  height: auto;
+  margin-right: 1%;
+}
+
+.drug-wrapper .drug-header,
+.drug-wrapper .drug-total {
+  display: none;
+}
+.drug-wrapper .drug-header.has-item,
+.drug-wrapper .drug-total.has-item {
+  display: flex;
+}
+.drug-wrapper .drug-list {
+  display: none;
+}
+.drug-wrapper .drug-list.has-item {
+  display: block;
+}
+
+.select2.select2-container.select2-container--default, .select2.select2-container.select2-container--below, .select2.select2-container.select2-container--focus, .select2.select2-container.select2-container--open {
+  padding: 0;
+}
+
+.quotation-table td p {
+  margin: 0;
+  padding: 0;
+}

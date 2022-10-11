@@ -1,8 +1,66 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url("https://fonts.googleapis.com/css?family=Nunito");
 
 // Variables
-@import 'variables';
+@import "variables";
 
 // Bootstrap
-@import '~bootstrap/scss/bootstrap';
+@import "~bootstrap/scss/bootstrap";
+
+.sidebar ul li {
+    a {
+        color: #000;
+        text-decoration: none;
+    }
+
+    &.active,
+    &:hover {
+        background-color: #0d6efd;
+
+        a {
+            color: #fff;
+        }
+    }
+}
+
+.prescription-images {
+    display: flex;
+}
+
+.prescription-image {
+    max-width: 19%;
+    height: auto;
+    margin-right: 1%;
+}
+
+.drug-wrapper {
+    .drug-header,
+    .drug-total {
+        display: none;
+
+        &.has-item {
+            display: flex;
+        }
+    }
+    .drug-list {
+        display: none;
+
+        &.has-item {
+            display: block;
+        }
+    }
+}
+
+.select2.select2-container {
+    &.select2-container--default,
+    &.select2-container--below,
+    &.select2-container--focus,
+    &.select2-container--open {
+        padding: 0;
+    }
+}
+
+.quotation-table td p {
+    margin: 0;
+    padding: 0;
+}

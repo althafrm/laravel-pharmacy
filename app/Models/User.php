@@ -21,6 +21,10 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'role_id',
+        'address',
+        'contact_no',
+        'dob',
     ];
 
     /**
@@ -41,4 +45,16 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    // Many-To-One relationship: belongsTo Role
+    public function role()
+    {
+        return $this->belongsTo(Role::class, 'role_id', 'id');
+    }
+
+    // One-To-Many relationship: hasMany Prescription
+    public function prescription()
+    {
+        return $this->hasMany(Prescription::class);
+    }
 }
