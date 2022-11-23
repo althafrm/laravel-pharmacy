@@ -1,20 +1,15 @@
 # Laravel Pharmacy
-## Project Setup on Windows
-- Install wampserver
-- Install composer
-- Install nodejs
+## Project Setup Instructions
 - Navigate into project directory
     ```bash
     cd laravel-pharmacy
     ```
-- [Generate ssh key pair](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) 
-- [Add ssh public key to github account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
 - Install composer and npm packages
     ```bash
     composer install
     npm install
     ```
-- Set mysql default storage engine in `C:\wamp64\bin\mysql\mysql5.7.36\my.ini`
+- Set mysql default storage engine in `path/to/bin/mysql/mysql5.7.36/my.ini`
     ```
     ;default-storage-engine=MYISAM
     default-storage-engine=InnoDB
